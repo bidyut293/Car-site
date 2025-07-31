@@ -13,7 +13,7 @@ A modern, responsive Next.js application designed to showcase automotive content
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/bidyut293/Car-site.git
 cd Vehicle-website-test-task
 ```
 
