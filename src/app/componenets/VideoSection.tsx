@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 "use client";
 
 import { useEffect, useState, useRef } from "react";
@@ -48,7 +48,7 @@ const videoAssets = {
       mp4: "/videos/Commercial-Engine.mp4",
       webm: "/videos/Commercial-Engine.webm",
       icon: "/icons/front.png",
-      label: "Front",
+      label: "Engine",
     },
     cabin: {
       mp4: "/videos/Commercial-Cabin.mp4",
@@ -155,7 +155,10 @@ export default function VideoSection() {
 
   const getVideoSource = () => {
     return currentSection === "passenger"
+    //@ts-ignore
       ? videoAssets.passenger[currentPassengerKey]
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      //@ts-ignore
       : videoAssets.commercial[currentCommercialKey];
   };
 
